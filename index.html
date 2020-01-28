@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unchained Games</title>
+  <link href="https://fonts.googleapis.com/css?family=Play:400,700&display=swap" rel="stylesheet">
+  <style>
+    /* CSS Reset */
+    html, body, div, span, h1 {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @font-face {
+      font-family: "Unchained";
+      src: url("./unchained.woff2")
+      format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    
+    body {
+      background: #202124;
+      font-family: 'Unchained', sans-serif;
+    }
+
+    .masthead {
+      text-align: center;
+      background: rgba(0,0,0,.8);
+      box-sizing: border-box;
+      padding: 20px 10px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 34px;
+      letter-spacing: 2px;
+      position: absolute;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    .masthead h1 {
+      -webkit-box-reflect: below -5px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
+      color: #fff;
+    }
+
+    .hero {
+      background-image: url('./hero.jpeg');
+      background-position: center center;
+      background-size: cover;
+      width: 100vw;
+      height: 75vh;
+      position: fixed;
+      top:0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .hero-spacer {
+      height: 75vh;
+      border-bottom: 1px solid #333;
+    }
+
+    .content {
+      background-color: #202124;
+      border-top: 1px solid #000;
+      box-sizing: border-box;
+      min-height: 100vh;
+      padding: 10px;
+    }
+
+    .content .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    .content .box {
+      background-color: #28292d;
+      box-shadow:rgba(0, 0, 0, 0.3) 0px 1px 2px 0px, rgba(0, 0, 0, 0.15) 0px 1px 3px 1px;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+    }
+
+    .content .box h2 {
+      color: gold;
+    }
+
+    .content .box h3 {
+      font-family: 'Play', sans-serif;
+      font-weight: 400;
+    }
+
+    @media (max-width: 750px) {
+      .content .wrapper {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .content .wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="masthead"><h1>Unchained Games</h1></div>
+  <div class="hero"></div>
+  <div class="hero-spacer"></div>
+  <div class="content">
+    <div class="wrapper">
+      <a href="https://unchainedgames.github.io/raffle" target="_blank">
+        <div class="box">
+          <h2>Raffle Market</h2>
+          <h3>Marketplace where Gods Unchained raffles happen</h3>
+          <img src="./raffle-ticket.png" width="100">
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
