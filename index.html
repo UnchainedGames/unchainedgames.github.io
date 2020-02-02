@@ -8,6 +8,10 @@
   <meta name="description" content="Mythic Titan Gods Unchained Games on Ethereum. Buy Sell Raffle and Trade your Gods Unchained Cards.">
   <meta name="keywords" content="Gods Unchained,Cards,Games,Raffle,Mythic,Ethereum,"/>
   <meta name="google" content="notranslate"/>
+  <meta property="og:title" content="Mythic Titan" />
+  <meta property="og:description" content="Gods Unchained Indie Card Games with Raffles Prizes and Giveaways" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://www.mythictitan.com/hero.jpeg" />
   <link href="https://fonts.googleapis.com/css?family=Play:400,700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
@@ -142,8 +146,15 @@
 
     .content .box .image-wrapper {
       border: 1px solid #999;
-      width: 100%;
+      height: 250px;
       margin-bottom: 20px;
+    }
+
+    .content .box .image-wrapper.raffle-market {
+      background-image: url('./raffle-ticket.png');
+      background-size: 75%;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     .content .box img {
@@ -263,15 +274,13 @@
     </div>
     <div class="wrapper">
       <div class="box">
-        <a href="https://unchainedgames.github.io/raffle" target="_blank">
-          <div class="image-wrapper">
-            <img src="./raffle-ticket.png">
-          </div>
+        <a href="https://mythictitan.com/raffle" target="_blank">
+          <div class="image-wrapper raffle-market"></div>
         </a>
         <h2>Gods Unchained Card Raffle</h2>
         <h3>Marketplace where Gods Unchained raffles happen. Raffles managed by an open, fair, and trusted Ethereum smart contract. Browse. Create raffles. Buy tickets. Win Cards.</h3>
         <div class="link-wrapper">
-          <a href="https://unchainedgames.github.io/raffle" target="_blank"><button>Click Here to Visit the Marketplace</button></a>
+          <a href="https://mythictitan.com/raffle" target="_blank"><button>Click Here to Visit the Marketplace</button></a>
         </div>
       </div>
     </div>

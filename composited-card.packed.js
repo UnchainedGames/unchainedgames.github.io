@@ -378,12 +378,14 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
         sizes="${s}"
         type="image/png"
       />
+
       <img
         crossorigin="Anonymous"
         srcset="https://images.godsunchained.com/card-layers2/layers/${at}/${e}_${t}.png"
         class="card__baseLayer__img"
       />
     </picture>
+
     <picture class="card__manaLayer">
       <source
         srcset="
@@ -405,6 +407,7 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
         sizes="${s}"
         type="image/png"
       />
+
       <img
         crossorigin="Anonymous"
         srcset="https://images.godsunchained.com/card-layers2/layers/${at}/mythic_C408.png"
@@ -423,6 +426,7 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
         sizes="${e}"
         type="image/webp"
       />
+
       <source
         srcset="
           https://images.godsunchained.com/card-layers2/layers/${at}/${t}_${s}.png ${at}w,
@@ -439,6 +443,7 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
         class="card__baseLayer__img"
       />
     </picture>
+
     <picture class="card__manaLayer">
       <source
         srcset="
@@ -466,6 +471,7 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
         class="card__manaLayer__img"
       />
     </picture>
+
     ${"common"!==A?j`
           <picture class="card__rarityLayer">
             <source
@@ -507,6 +513,7 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
               sizes="${e}"
               type="image/webp"
             />
+
             <source
               srcset="
                 https://images.godsunchained.com/card-layers2/layers/${at}/wreath_${s}.png ${at}w,
@@ -533,6 +540,7 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
               "
               type="image/webp"
             />
+
             <source
               srcset="
                 https://images.godsunchained.com/card-layers2/locks/${ht}/lock_${s}.png ${ht}w,
@@ -540,6 +548,7 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
               "
               type="image/png"
             />
+
             <img
               crossorigin="Anonymous"
               srcset="https://images.godsunchained.com/card-layers2/locks/lock_${s}.png"
@@ -569,6 +578,7 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
               sizes="${e}"
               type="image/png"
             />
+
             <img
               crossorigin="Anonymous"
               srcset="https://images.godsunchained.com/card-layers2/layers/${lt}/tribebar_${A}.png"
@@ -581,6 +591,7 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
     <div class="card__manaText" style=${b}>
       ${A}
     </div>
+
     <div
       class="card__nameText ${d?"card__nameText--crammed":""}"
       style=${v}
@@ -589,6 +600,7 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
         ${t}
       </div>
     </div>
+
     <div
       class="card__descriptionText ${u}"
       style=${x}
@@ -597,10 +609,12 @@ const $e=new WeakMap,et=r(e=>t=>{if(!(t instanceof P)||t instanceof H||"style"!=
         ${st(w)}
       </div>
     </div>
+
     ${c?j`
           <div class="card__attackText" style=${E}>
             ${r}
           </div>
+
           <div class="card__healthText" style=${S}>
             ${i}
           </div>
