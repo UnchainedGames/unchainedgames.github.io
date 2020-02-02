@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Unchained Games</title>
+  <meta name="description" content="Mythic Titan Gods Unchained Games on Ethereum. Buy Sell Raffle and Trade your Gods Unchained Cards.">
+  <title>Mythic Titan</title>
   <link href="https://fonts.googleapis.com/css?family=Play:400,700&display=swap" rel="stylesheet">
+  <link rel="icon" sizes="16x16 32x32 48x48 64x64 96x96 128x128 256x256" href="https://mythictitan.com/favicon.ico">
   <style>
     /* CSS Reset */
     html, body, div, span, h1 {
@@ -56,12 +58,12 @@
 
     .masthead {
       text-align: center;
-      background: rgba(0,0,0,.8);
+      background: rgba(0, 0, 0, 0.9);
       box-sizing: border-box;
-      padding: 10px;
+      padding: 10px 0;
       color: #fff;
       font-weight: 700;
-      font-size: 16px;
+      font-size: 26px;
       letter-spacing: 2px;
       position: absolute;
       width: 100vw;
@@ -70,9 +72,20 @@
       z-index: 10;
     }
 
+    .masthead .logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .masthead img {
+      width: 70px;
+    }
+
     .masthead h1 {
-      -webkit-box-reflect: below -5px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
-      color: #fff;
+      color: #e1e1e1;
+      -webkit-text-stroke: 1px #000;
+      text-shadow: 0px 1px 0px #ccc;
     }
 
     .hero {
@@ -130,7 +143,7 @@
 
     .composite-card {
       display: inline-block;
-      width: 200px;
+      width: 300px;
     }
 
     .link-wrapper {
@@ -140,6 +153,10 @@
     @media (max-width: 750px) {
       .content .wrapper {
         grid-template-columns: 1fr 1fr;
+      }
+
+      .composite-card {
+        width: 250px;
       }
     }
 
@@ -152,21 +169,15 @@
   <script src="./composited-card.packed.js"></script>
 </head>
 <body>
-  <div class="masthead"><h1>MythicTitan.com</h1></div>
+  <div class="masthead">
+    <div class="logo-wrapper">
+      <img src="./mythic-titan-logo.png">
+      <h1>Mythic Titan</h1>
+    </div>
+  </div>
   <div class="hero"></div>
   <div class="hero-spacer"></div>
   <div class="content">
-    <div class="wrapper">
-      <div class="box">
-        <h2>Gods Unchained Card Raffle</h2>
-        <h3>Marketplace where Gods Unchained raffles happen</h3>
-        <div><img src="./raffle-ticket.png" width="100"></div>
-        <div class="link-wrapper">
-          <a href="https://unchainedgames.github.io/raffle" target="_blank"><button style="margin-right:10px;">Uncapped Raffles</button></a>
-          <a href="https://unchainedgames.github.io/raffle" target="_blank"><button>Capped Raffles</button></a>
-        </div>
-      </div>
-    </div>
     <div class="wrapper composite-cards">
       <div class="composite-card">
         <composited-card class="card" protoid="65000" quality="1" responsivesrcsetsizes="(min-width: 250px) 160px, 320px"></composited-card>
@@ -176,6 +187,17 @@
       </div>
       <div class="composite-card">
         <composited-card class="card" protoid="65002" quality="1" responsivesrcsetsizes="(min-width: 250px) 160px, 320px"></composited-card>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="box">
+        <h2>Gods Unchained Card Raffle</h2>
+        <h3>Marketplace where Gods Unchained raffles happen</h3>
+        <div><img src="./raffle-ticket.png" width="100"></div>
+        <div class="link-wrapper">
+          <a href="https://unchainedgames.github.io/raffle" target="_blank"><button style="margin-right:10px;">Uncapped Raffles</button></a>
+          <a href="https://unchainedgames.github.io/raffle" target="_blank"><button>Capped Raffles</button></a>
+        </div>
       </div>
     </div>
   </div>
