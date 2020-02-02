@@ -21,7 +21,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png" />
 <style>
     /* CSS Reset */
-    html, body, div, span, h1 {
+    html, body, div, span, h1, h2, h3, h4 {
       margin: 0;
       padding: 0;
       border: 0;
@@ -64,10 +64,10 @@
       font-size: 16px;
       border-radius: 6px;
       font-family: Play;
-      border: 1px solid #ccc;
     }
 
     .masthead {
+      display: none;
       text-align: center;
       background: rgba(0, 0, 0, 0.9);
       box-sizing: border-box;
@@ -129,6 +129,7 @@
       grid-gap: 10px;
       justify-items: center;
       padding: 50px 10px;
+      position: relative;
     }
 
     .content .box {
@@ -139,26 +140,69 @@
       border-radius: 4px;
     }
 
+    .content .box .image-wrapper {
+      border: 1px solid #999;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .content .box img {
+      width: inherit;
+    }
+
     .content .box h2 {
       color: gold;
+      font-size: 24px;
+      padding-bottom: 15px;
+      text-align: center;
     }
 
     .content .box h3 {
       font-family: 'Play', sans-serif;
       font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .section.mythic-titans {
+      background-color:#111;
+      padding-top: 30px;
     }
 
     .composite-cards {
-      background: #111;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .composite-card {
       display: inline-block;
-      width: 250px;
+      width: 300px;
+    }
+
+    .mythic-title h4 {
+      background: -webkit-gradient(linear,left top,left bottom,from(#fbfbfb),color-stop(38%,#affaf6),to(#55d0c6));
+      background: linear-gradient(to bottom,#fbfbfb 0,#affaf6 38%,#55d0c6 100%);
+      color: #a1f5f5;
+      font-size: 30px;
+      text-align: center;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .mythic-title p {
+      color: #fff;
+      font-family: Play;
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto;
+      padding-top: 20px;
+      line-height: 24px;
     }
 
     .link-wrapper {
-      padding-top: 12px;
+      padding-top: 20px;
+      text-align: center;
     }
 
     .footer {
@@ -173,7 +217,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 250px;
+      width: 200px;
     }
 
     @media (max-width: 750px) {
@@ -200,25 +244,34 @@
   <div class="hero"></div>
   <div class="hero-spacer"></div>
   <div class="content">
-    <div class="wrapper composite-cards">
-      <div class="composite-card">
-        <composited-card class="card" protoid="65000" quality="1" responsivesrcsetsizes="(min-width: 250px) 160px, 320px"></composited-card>
+    <div class="section mythic-titans">
+      <div class="mythic-title">
+        <h4>Mythic Titans</h4>
+        <p>Mythic cards are extraordinarily rare, completely unique cards which can be found in various novel ways</p>
       </div>
-      <div class="composite-card">
-        <composited-card class="card" protoid="65001" quality="1" responsivesrcsetsizes="(min-width: 250px) 160px, 320px"></composited-card>
-      </div>
-      <div class="composite-card">
-        <composited-card class="card" protoid="65002" quality="1" responsivesrcsetsizes="(min-width: 250px) 160px, 320px"></composited-card>
+      <div class="wrapper composite-cards">
+        <div class="composite-card">
+          <composited-card class="card" protoid="65000" quality="1" responsivesrcsetsizes="(min-width: 300px) 160px, 320px"></composited-card>
+        </div>
+        <div class="composite-card">
+          <composited-card class="card" protoid="65001" quality="1" responsivesrcsetsizes="(min-width: 300px) 160px, 320px"></composited-card>
+        </div>
+        <div class="composite-card">
+          <composited-card class="card" protoid="65002" quality="1" responsivesrcsetsizes="(min-width: 300px) 160px, 320px"></composited-card>
+        </div>
       </div>
     </div>
     <div class="wrapper">
       <div class="box">
+        <a href="https://unchainedgames.github.io/raffle" target="_blank">
+          <div class="image-wrapper">
+            <img src="./raffle-ticket.png">
+          </div>
+        </a>
         <h2>Gods Unchained Card Raffle</h2>
-        <h3>Marketplace where Gods Unchained raffles happen</h3>
-        <div><img src="./raffle-ticket.png" width="100"></div>
+        <h3>Marketplace where Gods Unchained raffles happen. Raffles managed by an open, fair, and trusted Ethereum smart contract. Browse. Create raffles. Buy tickets. Win Cards.</h3>
         <div class="link-wrapper">
-          <a href="https://unchainedgames.github.io/raffle" target="_blank"><button style="margin-right:10px;">Uncapped Raffles</button></a>
-          <a href="https://unchainedgames.github.io/raffle" target="_blank"><button>Capped Raffles</button></a>
+          <a href="https://unchainedgames.github.io/raffle" target="_blank"><button>Click Here to Visit the Marketplace</button></a>
         </div>
       </div>
     </div>
