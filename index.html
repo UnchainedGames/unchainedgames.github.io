@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Mythic Titan</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Mythic Titan Gods Unchained Games on Ethereum. Buy Sell Raffle and Trade your Gods Unchained Cards.">
-  <title>Mythic Titan</title>
+  <meta name="keywords" content="Gods Unchained,Cards,Games,Raffle,Mythic,Ethereum,"/>
+  <meta name="google" content="notranslate"/>
   <link href="https://fonts.googleapis.com/css?family=Play:400,700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
@@ -152,20 +154,31 @@
 
     .composite-card {
       display: inline-block;
-      width: 300px;
+      width: 250px;
     }
 
     .link-wrapper {
       padding-top: 12px;
     }
 
+    .footer {
+      background: #111;
+      height: 100vh;
+      position: relative;
+    }
+
+    .footer img {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+    }
+
     @media (max-width: 750px) {
       .content .wrapper {
         grid-template-columns: 1fr 1fr;
-      }
-
-      .composite-card {
-        width: 250px;
       }
     }
 
@@ -209,6 +222,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="footer">
+    <img src="./mythic-titan-logo.png">
   </div>
 </body>
 </html>
