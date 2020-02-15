@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mythic Titan Raffle Instructions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Mythic Titan Raffle Help">
+  <meta name="keywords" content="gods unchained,cards,games,raffle,mythic titan,ethereum,help"/>
+  <meta property="og:title" content="Mythic Titan" />
+  <meta property="og:description" content="Raffle Help" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://www.mythictitan.com/mythic-titan-logo.png" />
+  <link href="https://fonts.googleapis.com/css?family=Play:400,700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon-180x180.png" />
+<style>
+    /* CSS Reset */
+    html, body, div, span, h1, h2, h3, h4 {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    body {
+      line-height: 1;
+    }
+    
+    body {
+      background: #202124;
+      font-family: 'Play', arial, helvetica, sans-serif;
+    }
+
+    button {
+      background-color: #555;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 6px;
+      font-family: Play;
+    }
+
+    .hero {
+      background-image: url('/raffle-ticket.png');
+      background-position: center center;
+      background-size: 25%;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 50vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .hero-spacer {
+      height: 50vh;
+      border-bottom: 1px solid #333;
+    }
+
+    .content {
+      background-color: #202124;
+      border-top: 1px solid #000;
+      box-sizing: border-box;
+      min-height: 100vh;
+    }
+
+    .content .wrapper {
+      padding: 50px 10px;
+      position: relative;
+    }
+
+    .section.mythic-titans {
+      background-color:#111;
+      padding: 30px 0;
+    }
+
+    .composite-cards {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .composite-card {
+      display: inline-block;
+      width: 300px;
+    }
+
+    .mythic-title h4 {
+      background: -webkit-gradient(linear,left top,left bottom,from(#fbfbfb),color-stop(38%,#affaf6),to(#55d0c6));
+      background: linear-gradient(to bottom,#fbfbfb 0,#affaf6 38%,#55d0c6 100%);
+      color: #a1f5f5;
+      font-size: 30px;
+      text-align: center;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .mythic-title p {
+      color: #fff;
+      font-family: Play;
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto;
+      padding-top: 20px;
+      line-height: 24px;
+    }
+
+    .link-wrapper {
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .content .questions {
+      color: #ccc;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    .content .questions .info {
+      max-width: 600px;
+      margin: 0 auto;
+      padding-bottom: 100px;
+      word-wrap: break-word;
+    }
+
+    .content .questions .question {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .footer {
+      background: #111;
+      height: 100vh;
+      position: relative;
+    }
+
+    .footer img {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+    }
+
+    @media (max-width: 750px) {
+      .hero {
+        background-size: 40%;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .hero {
+        background-size: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero"></div>
+  <div class="hero-spacer"></div>
+  <div class="content">
+    <div class="section mythic-titans">
+      <div class="mythic-title">
+        <h4>Mythic Titan Raffle FAQ</h4>
+        <p>Answering frequently asked questions all about<br> Gods Unchained Card Raffles</p>
+      </div>
+    </div>
+    <div class="wrapper questions">
+      <div class="info">
+        <div class="question">Are Gods Unchained Card Raffles secure?</div>
+        <div class="answer">
+          <p>The simple answer is yes. All Raffles on the marketplace are self managed by an open source Ethereum smart contract</p>
+          <p>Checkout the smart contract here: <a href="https://etherscan.io/address/0x065ae34771aa010747dbe375dabaf02c0931d778" target="_blank">https://etherscan.io/address/0x065ae34771aa010747dbe375dabaf02c0931d778</a></p>
+        </div>
+      </div>
+      <div class="info">
+        <div class="question">How do I buy raffle tickets?</div>
+        <div class="answer">
+          <p>Visit the marketplace. Tap on a card. Select the number of raffle tickets. Click the Buy Tickets button and Confirm your metamask transaction.</p>
+          <p>The marketplace works best with Google Chrome web browser and a metamask chrome extension.</p>
+        </div>
+      </div>
+      <div class="info">
+        <div class="question">Can anyone create a raffle?</div>
+        <div class="answer">
+          <p>Yes, anyone holding Gods Unchained cards in the <a href="https://etherscan.io/token/0x0e3a2a1f2146d86a604adc220b4967a898d7fe07">official contract</a> can raffle their cards.</p>
+        </div>
+      </div>
+      <div class="info">
+        <div class="question">How do I create a raffle?</div>
+        <div class="answer">
+          <p>1. Navigate to <a href="/raffle/?place=create_raffle">Create Raffle</a></p>
+          <p>2. Find the card you want to raffle by name and quality</p>
+          <p>3. Tap on the card</p>
+          <p>4. Set the number of tickets required to activate the raffle</p>
+          <p>5. Set the cost per raffle ticket</p>
+          <p>6. Tap the Create Raffle button and Confirm metamask transaction</p>
+        </div>
+      </div>
+      <div class="info">
+        <div class="question">How can I see my raffles?</div>
+        <div class="answer">
+          <p><a href="/raffle/?place=my_raffles">Navigate to My Raffles</a></p>
+        </div>
+      </div>
+      <div class="info">
+        <div class="question">What are No Limit Raffles?</div>
+        <div class="answer">
+          <p>No limit raffles are raffles with no limit to the maximum number of tickets which can be included</p>
+          <p>Anyone can activate no limit raffles once the minimum number of tickets is reached</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img src="/images/mythic-titan-logo.png">
+  </div>
+</body>
+</html>
